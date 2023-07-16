@@ -1,5 +1,7 @@
 import React from 'react';
 import SearchIcon from "../search.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const SearchBar = ({ value, onChange, placeholder, onClick}) => {
 
@@ -11,6 +13,7 @@ const SearchBar = ({ value, onChange, placeholder, onClick}) => {
 
     return (
         <div className="search">
+          
             <input
             type='text'
             value={value}
@@ -18,11 +21,7 @@ const SearchBar = ({ value, onChange, placeholder, onClick}) => {
             onChange={onChange}
             placeholder={placeholder}
             />
-            <img
-            src={SearchIcon}
-            alt="search"
-            onClick={onClick}
-            />
+            <FontAwesomeIcon icon={faMagnifyingGlass} onClick={onClick} className='searchIcon'/>
         </div>
     );
 }

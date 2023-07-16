@@ -14,14 +14,106 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background-color: #0c0c0c;
 }
+
+/********************** Light Mode Styles ************************/
+.light {
+  background-color: rgb(234, 234, 234);
+}
+
+/********************** Light Mode Title ************************/
+.light h1 {
+  color: #328ccd;
+}
+
+/********************** Light Mode Search Bar ************************/
+.light .search {
+  background-color:#c7d0d6;
+  -webkit-box-shadow: 5px 5px 7px #c7d0d6, -5px -5px 7px #c7d0d6;
+  box-shadow: 5px 5px 7px #80898f, -5px -5px 7px #80898f;
+}
+
+.light .search input {
+  color: #0c0c0c;
+  background: #c7d0d6;
+}
+
+.light .search .searchIcon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color:#328ccd;
+}
+
+/********************** Light Mode Movie Card ************************/
+.light .movie {
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.light .movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color:#328ccd;
+}
+
+.light .movie:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+  background-color: #1c1d1f;
+}
+
+.light .movie div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #c7d0d6;
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.light .movie div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color:#328ccd;
+}
+
+.light .movie div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color:#328ccd;
+}
+
+/********************** Light No Movies Found Styles ************************/
+.light .empty h2 {
+  color:#328ccd ;
+}
+/********************** END OF LIGHT MODE STYLES ************************/
+
+
 
 
 /********************** App Container ************************/
 .app {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,15 +124,7 @@ body {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 110%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
+  color: #f9d3b4;
 }
 
 /********************** Search Bar Container ************************/
@@ -74,10 +158,11 @@ h1 {
 }
 
 /********************** Search Icon ************************/
-.search img {
+.search .searchIcon {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  color: #f9d3b4;
 }
 
 
@@ -97,7 +182,7 @@ h1 {
   font-family: var(--font-raleway);
 }
 
-/********************** Search Bar Container ************************/
+/********************** Movie Card Container ************************/
 .container {
   width: 100%;
   margin-top: 3rem;
