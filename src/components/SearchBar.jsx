@@ -1,5 +1,4 @@
 import React from 'react';
-import SearchIcon from "../search.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 

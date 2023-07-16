@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons';
 
 
-const API_URL = "http://www.omdbapi.com?apikey=1aa6b9ca";
+const API_URL = "https://www.omdbapi.com?apikey=1aa6b9ca";
 
 function MainScreen({theme, setTheme}) {
     const [searchTerm, setSearchTerm] = useState("");
