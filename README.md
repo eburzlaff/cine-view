@@ -3,8 +3,8 @@
 # Description
 Movie App that allows users to search for their favorite movies and see their basic information such as year of release, title etc.
 
-## Live Demo link:
-[soon]()
+## Live Demo:
+[Live Demo Link](https://cine-view.netlify.app)
 
 ## Technologies
 - ReactJS
